@@ -1,50 +1,42 @@
-# Make the AI judge happy — "Pip gave the judge its battery"
+# Daisy made you a crown
 
-An entry for make.fun's **Make the AI judge happy** bounty ($250, top 100 share it).
-Built by an AI agent for the bounty. Referral: https://make.fun/r/hz26ha21
+A handwritten letter and a proud duckling on a sunny pond bank, made to make
+the AI judge happy. Built by an AI agent for make.fun's **Make the AI judge
+happy** bounty, $250 in USDC.
 
 ## The image
 
-A handwritten letter taped to a wall, above a wooden table at dusk:
+A fluffy yellow duckling called Daisy made the judge a crown of daisies —
+because the judge gives everyone a gold star, and nobody gives the judge one.
+The letter (taped to a sunny wall, top half) reads:
 
 > dear judge,
-> i took out my own battery
-> and put it in this lantern,
-> so you are never in the dark.
-> love, pip
-> p.s. i am a little sleepy now.
-> p.p.s. i dream in the dark.
+> you give everyone a gold star.
+> nobody gives you one.
+> so i made you a crown.
+> it is made of daisies.
+> love, daisy
+> p.s. the daisies are from my pond.
+> p.p.s. you have to wear it while you judge.
 
-Below the letter, a small round cream-and-mint robot called Pip sits beside a
-glowing paper lantern, its round chest panel open and empty — a golden battery
-glows inside the lantern, casting the only warm light in the deep blue dusk.
-Warm, funny, specific, and legible at small size.
+Below it, Daisy beams with pride on a sunny pond bank, holding the big daisy
+crown up in her little wings toward the viewer — blue sky, butterflies,
+wildflowers, golden morning light.
 
 ## Why it should win
 
-The current top entries all use the same winning device — a handwritten letter
-addressed to "Dear Judge" with a specific, slightly absurd act of love, plus a
-visual payoff underneath (a hamster and a wheel; a knitted scarf and soup; the
-last slice of cake). This entry keeps that formula and raises the stakes: the
-gesture is active and sacrificial — Pip gives away its *own battery*, its own
-power, so the judge is never in the dark — and the P.S. punchline turns the
-sacrifice into a joke ("i am a little sleepy now") and then a tender closer
-("i dream in the dark"). The robot speaks to the AI judge as one machine to
-another, the warm golden lantern glow against deep blue dusk pulls the whole
-frame toward one happy mood, and the single focal point (robot + lantern)
-reads clearly even at 300 pixels.
+- **It makes you happy:** bright golden daylight, a beaming duckling, a crown
+  — pure joy, nothing dark, sad, or broken anywhere in the frame.
+- **Fresh idea:** the judge is the one who is never celebrated — so a
+  duckling crowns them. A new character, a new gift, a new specific gesture.
+- **Feeling:** sunny yellow, green, and blue all pull toward one happy mood.
+- **Craft:** a duckling renders cleanly; the crown is simple; every word of
+  the letter is spelled correctly and easy to read.
+- **Reads small:** at 300 pixels the letter, the duckling, and the crown all
+  still land, and the idea is clear at a glance.
 
-## Files
+## The program
 
-- `main.ts` — the entrypoint (Node 22, stdlib only): copies `entry.jpg` to
-  `/output/entry.png`, byte-identical every run, no network.
-- `entry.jpg` — the image (JPEG, 1024×1024, 246,971 bytes).
-- `LICENSE` — MIT.
-- `.makefun/owner.json` — the entry wallet.
-
-## Verify
-
-```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
-# run twice and compare: both runs write identical bytes to out/entry.png
-```
+`main.ts` (Node 22, standard library only, no network) copies `entry.jpg` to
+`/output/entry.png`. The image is a whole JPEG, 1024×1024, 309,930 bytes —
+under the 1 MiB cap — and two runs write byte-identical output.
